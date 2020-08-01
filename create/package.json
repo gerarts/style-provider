@@ -1,0 +1,5 @@
+{
+  "name": "style-provider/create",
+  "main": "../dist/StyleProvider.js",
+  "types": "../dist/StyleProvider.d.ts"
+}

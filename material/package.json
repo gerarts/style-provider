@@ -1,0 +1,5 @@
+{
+  "name": "style-provider/material",
+  "main": "../dist/materialDesign.js",
+  "types": "../dist/materialDesign.d.ts"
+}
