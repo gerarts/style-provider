@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Palette | style-provider - v0.1.0</title>
+	<title>StyleObject | style-provider - v0.1.1</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">style-provider - v0.1.0</a>
+					<a href="../index.html" class="title">style-provider - v0.1.1</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_defaultstyleprovider_.html">&quot;defaultStyleProvider&quot;</a>
+					<a href="../modules/_defaultstyles_.html">&quot;defaultStyles&quot;</a>
 				</li>
 				<li>
-					<a href="_defaultstyleprovider_.palette.html">Palette</a>
+					<a href="_defaultstyles_.styleobject.html">StyleObject</a>
 				</li>
 			</ul>
-			<h1>Interface Palette</h1>
+			<h1>Interface StyleObject</h1>
 		</div>
 	</div>
 </header>
@@ -73,7 +73,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">Palette</span>
+						<span class="target">StyleObject</span>
 					</li>
 				</ul>
 			</section>
@@ -84,9 +84,10 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_defaultstyleprovider_.palette.html#accent" class="tsd-kind-icon">accent</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_defaultstyleprovider_.palette.html#primary" class="tsd-kind-icon">primary</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_defaultstyleprovider_.palette.html#secondary" class="tsd-kind-icon">secondary</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_defaultstyles_.styleobject.html#fontfamily" class="tsd-kind-icon">font<wbr>Family</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_defaultstyles_.styleobject.html#fontsize" class="tsd-kind-icon">font<wbr>Size</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_defaultstyles_.styleobject.html#lineheight" class="tsd-kind-icon">line<wbr>Height</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_defaultstyles_.styleobject.html#palette" class="tsd-kind-icon">palette</a></li>
 							</ul>
 						</section>
 					</div>
@@ -95,32 +96,42 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="accent" class="tsd-anchor"></a>
-					<h3>accent</h3>
-					<div class="tsd-signature tsd-kind-icon">accent<span class="tsd-signature-symbol">:</span> <a href="_defaultstyleprovider_.color.html" class="tsd-signature-type">Color</a></div>
+					<a name="fontfamily" class="tsd-anchor"></a>
+					<h3>font<wbr>Family</h3>
+					<div class="tsd-signature tsd-kind-icon">font<wbr>Family<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in defaultStyleProvider.ts:9</li>
+							<li>Defined in defaultStyles.ts:13</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="primary" class="tsd-anchor"></a>
-					<h3>primary</h3>
-					<div class="tsd-signature tsd-kind-icon">primary<span class="tsd-signature-symbol">:</span> <a href="_defaultstyleprovider_.color.html" class="tsd-signature-type">Color</a></div>
+					<a name="fontsize" class="tsd-anchor"></a>
+					<h3>font<wbr>Size</h3>
+					<div class="tsd-signature tsd-kind-icon">font<wbr>Size<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in defaultStyleProvider.ts:10</li>
+							<li>Defined in defaultStyles.ts:14</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="secondary" class="tsd-anchor"></a>
-					<h3>secondary</h3>
-					<div class="tsd-signature tsd-kind-icon">secondary<span class="tsd-signature-symbol">:</span> <a href="_defaultstyleprovider_.color.html" class="tsd-signature-type">Color</a></div>
+					<a name="lineheight" class="tsd-anchor"></a>
+					<h3>line<wbr>Height</h3>
+					<div class="tsd-signature tsd-kind-icon">line<wbr>Height<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in defaultStyleProvider.ts:11</li>
+							<li>Defined in defaultStyles.ts:15</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="palette" class="tsd-anchor"></a>
+					<h3>palette</h3>
+					<div class="tsd-signature tsd-kind-icon">palette<span class="tsd-signature-symbol">:</span> <a href="_defaultstyles_.palette.html" class="tsd-signature-type">Palette</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in defaultStyles.ts:16</li>
 						</ul>
 					</aside>
 				</section>
@@ -135,8 +146,11 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_styleprovider_.html">&quot;<wbr>Style<wbr>Provider&quot;</a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/_defaultstyleprovider_.html">&quot;default<wbr>Style<wbr>Provider&quot;</a>
+					</li>
+					<li class="current tsd-kind-external-module">
+						<a href="../modules/_defaultstyles_.html">&quot;default<wbr>Styles&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_materialdesign_.html">&quot;material<wbr>Design&quot;</a>
@@ -146,40 +160,34 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_defaultstyleprovider_.color.html" class="tsd-kind-icon">Color</a>
+						<a href="_defaultstyles_.color.html" class="tsd-kind-icon">Color</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_defaultstyles_.palette.html" class="tsd-kind-icon">Palette</a>
 					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_defaultstyleprovider_.palette.html" class="tsd-kind-icon">Palette</a>
+						<a href="_defaultstyles_.styleobject.html" class="tsd-kind-icon">Style<wbr>Object</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_defaultstyleprovider_.palette.html#accent" class="tsd-kind-icon">accent</a>
+								<a href="_defaultstyles_.styleobject.html#fontfamily" class="tsd-kind-icon">font<wbr>Family</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_defaultstyleprovider_.palette.html#primary" class="tsd-kind-icon">primary</a>
+								<a href="_defaultstyles_.styleobject.html#fontsize" class="tsd-kind-icon">font<wbr>Size</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_defaultstyleprovider_.palette.html#secondary" class="tsd-kind-icon">secondary</a>
+								<a href="_defaultstyles_.styleobject.html#lineheight" class="tsd-kind-icon">line<wbr>Height</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_defaultstyles_.styleobject.html#palette" class="tsd-kind-icon">palette</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_defaultstyleprovider_.styleobject.html" class="tsd-kind-icon">Style<wbr>Object</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/_defaultstyleprovider_.html#rootstyleprovider" class="tsd-kind-icon">root<wbr>Style<wbr>Provider</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/_defaultstyleprovider_.html#styleprovider" class="tsd-kind-icon">style<wbr>Provider</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_defaultstyleprovider_.html#styleproviderobject" class="tsd-kind-icon">style<wbr>Provider<wbr>Object</a>
-					</li>
 					<li class=" tsd-kind-object-literal tsd-parent-kind-external-module">
-						<a href="../modules/_defaultstyleprovider_.html#defaultstyles" class="tsd-kind-icon">default<wbr>Styles</a>
+						<a href="../modules/_defaultstyles_.html#defaultstyles" class="tsd-kind-icon">default<wbr>Styles</a>
 					</li>
 				</ul>
 			</nav>
